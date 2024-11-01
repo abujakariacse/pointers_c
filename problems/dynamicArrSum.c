@@ -22,9 +22,10 @@ int main()
         scanf("%d", &arr[i]);
     }
 
-    for (int i = 0; i < n; i++)
+    int *ptr = arr;
+    for (int i = 0; i < n; i++, ptr++)
     {
-        sum += arr[i];
+        sum += *ptr;
     }
 
     free(arr);
